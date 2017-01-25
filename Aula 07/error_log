@@ -1,0 +1,6 @@
+[24-May-2016 19:31:38 UTC] PHP Notice:  Undefined index: nome in /home/tarnaph/public_html/php7/Aula 07/Aula 07_2.php on line 62
+[24-May-2016 19:31:38 UTC] PHP Notice:  Undefined index: email in /home/tarnaph/public_html/php7/Aula 07/Aula 07_2.php on line 65
+[23-Jun-2016 20:15:53 UTC] PHP Notice:  Undefined index: nome in /home/tarnaph/public_html/php7/Aula 07/form/form_simples.php on line 4
+[23-Jun-2016 20:15:53 UTC] PHP Notice:  Undefined index: email in /home/tarnaph/public_html/php7/Aula 07/form/form_simples.php on line 5
+[23-Jun-2016 20:15:53 UTC] PHP Notice:  Undefined index: idade in /home/tarnaph/public_html/php7/Aula 07/form/form_simples.php on line 6
+[23-Jun-2016 20:15:53 UTC] PHP Notice:  Undefined index: estadocivil in /home/tarnaph/public_html/php7/Aula 07/form/form_simples.php on line 7

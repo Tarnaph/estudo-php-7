@@ -1,0 +1,27 @@
+Exercicios
+1) Construa um cadastro de cliente com os seguintes campos:
+	MEUS DADOS
+	Nome completo
+	Email
+	Telefone
+	Nascimento
+	Gênero
+	Reber novidades
+	Como nós conheceu?
+	CPF
+	Foto
+
+	ENDEREÇO
+	Nome do destinatário
+	CEP
+	Endereço de entrega
+	Número
+	Complemento
+	Bairro
+	Cidade
+	Estado
+	Páis
+
+2) Construa area de login
+3) Construa area de listagem de clientes, como excluir e editar
+4) Construa recuperar senha

@@ -1,0 +1,65 @@
+<?php
+
+/***************
+* Exercício 01 *
+***************/
+
+abstract class FormaGeometrica {
+     abstract function calculoDaArea();
+}
+
+class Quadrado extends FormaGeometrica {
+     
+     private $comprimento;
+     private $altura;
+     
+     public function __construct($comprimento, $altura) {
+         $this->comprimento = $comprimento;
+         $this->altura = $altura;
+     }
+     
+     public function calculoDaArea() {
+         echo ($this->comprimento * $this->altura);
+     }
+}
+
+class Circulo extends FormaGeometrica {
+     
+     private $raio;
+     
+     public function __construct($raio) {
+         $this->raio = $raio;
+     }
+     
+     public function calculoDaArea() {
+         echo (3.14 * ($this->raio * $this->raio));
+     }
+}
+
+class Losangulo extends FormaGeometrica {
+     
+     private $diagonalMaior;
+     private $diagonalMenor;
+     
+     public function __construct($diagonalMaior, $diagonalMenor) {
+         $this->diagonalMaior = $diagonalMaior;
+         $this->diagonalMenor = $diagonalMenor;
+     }
+     
+     public function calculoDaArea() {
+         echo ($this->diagonalMaior * $this->diagonalMenor) / 2;
+     }
+}
+
+$q = new Quadrado(2, 4);
+$q->calculoDaArea();
+echo "<BR>";
+
+$c = new Circulo(5);
+$c->calculoDaArea();
+echo "<BR>";
+
+$l = new Losangulo(6, 7);
+$l->calculoDaArea();
+
+?>

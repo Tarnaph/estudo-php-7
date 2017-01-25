@@ -1,0 +1,78 @@
+[26-May-2016 02:24:34 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 32
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 33
+[26-May-2016 02:24:34 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 39
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 40
+[26-May-2016 02:24:34 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 47
+[26-May-2016 02:24:34 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 48
+[26-May-2016 02:24:34 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 49
+[26-May-2016 02:24:34 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 50
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 51
+[26-May-2016 02:24:34 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 63
+[26-May-2016 02:24:34 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[26-May-2016 02:24:34 UTC] PHP Notice:  Undefined variable: buffer in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[26-May-2016 02:24:34 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 65
+[26-May-2016 02:24:34 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 66
+[26-May-2016 02:24:34 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 68
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 70
+[26-May-2016 02:24:34 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 85
+[26-May-2016 02:24:34 UTC] PHP Warning:  filesize(): stat failed for /Users/Raphael/Desktop/teste.txt in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[26-May-2016 02:24:34 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 88
+[26-May-2016 02:24:34 UTC] PHP Warning:  file(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 93
+[26-May-2016 02:24:34 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 95
+[26-May-2016 02:24:34 UTC] PHP Warning:  opendir(/Users/Raphael/Desktop): failed to open dir: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 111
+[26-May-2016 02:24:34 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 112
+[26-May-2016 02:24:34 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 113
+[26-May-2016 02:24:34 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 114
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 32
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 33
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 39
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 40
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 47
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 48
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 49
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 50
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 51
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 63
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[03-Jul-2016 20:03:23 UTC] PHP Notice:  Undefined variable: buffer in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 65
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 66
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 68
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 70
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 85
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  filesize(): stat failed for /Users/Raphael/Desktop/teste.txt in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 88
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  file(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 93
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 95
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  opendir(/Users/Raphael/Desktop): failed to open dir: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 111
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 112
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 113
+[03-Jul-2016 20:03:23 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 114
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 32
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 33
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 39
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 40
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 47
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 48
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 49
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 50
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 51
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 63
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[03-Jul-2016 20:04:05 UTC] PHP Notice:  Undefined variable: buffer in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 64
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 65
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 66
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 68
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 70
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fopen(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 85
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  filesize(): stat failed for /Users/Raphael/Desktop/teste.txt in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fread() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 86
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 88
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  file(/Users/Raphael/Desktop/teste.txt): failed to open stream: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 93
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 95
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  opendir(/Users/Raphael/Desktop): failed to open dir: No such file or directory in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 111
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 112
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  readdir() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 113
+[03-Jul-2016 20:04:05 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, boolean given in /home/tarnaph/public_html/php7/Aula 06/Aula 06.php on line 114

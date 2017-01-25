@@ -1,0 +1,1 @@
+Texto livre representando o conteúdo do arquivo a ser manipulado(zip/unzip).

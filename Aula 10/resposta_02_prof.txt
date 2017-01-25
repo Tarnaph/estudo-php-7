@@ -1,0 +1,368 @@
+<?php
+
+/***************
+* Exercício 01 *
+***************/
+
+/**
+ * Como classe auxiliar foi criada a classe abstrata PESSOA, com a intenção
+ * de centralizar os dados comuns entre FUNCIONARIOS e USUARIOS, e também
+ * para padronizar o método de exibição de informações, por meio do método
+ * abstrato showInfoPessoa.
+ * */ 
+abstract class Pessoa {
+
+    // Elementos PROTECTED podem ser utilizados pela classe e suas subclasses    
+    protected $nome;
+    protected $telefone;
+    protected $endereco;
+    
+    public function __construct($nome, $telefone, $endereco) {
+        $this->nome = $nome;
+        $this->telefone = $telefone;
+        $this->endereco = $endereco;
+    }
+    
+    // Como será necessário capturar o nome dos objetos mais adiante, foi criado
+    // o método getNome
+    public function getNome() {
+        return $this->nome;
+    }
+    
+    abstract function showInfoPessoa();
+}
+
+/**
+ * A classe USUARIO extende de PESSOA, e tem um atributi próprio que FUNCIONARIO
+ * não tem: o número de locações já realizadas por esta pessoa. Para interagir
+ * com este dado, foram criados os métodos set e get deste atributo, uma vez
+ * que oa tributo foi criado como PRIVATE para evitar o acesso externo ao mesmo.
+ * */    
+class Usuario extends Pessoa {
+    private $numeroDeLocacoes = 0;
+    
+    public function getNumeroDeLocacoes() {
+       return $this->numeroDeLocacoes;
+    }
+    
+    public function setNumeroDeLocacoes($numeroDeLocacoes) {
+       $this->numeroDeLocacoes = $numeroDeLocacoes;
+    }
+    
+    public function showInfoPessoa() {
+        echo "Informações de pessoa: ";
+        echo $this->nome . " ";
+        echo $this->telefone . " ";
+        echo $this->endereco . " ";
+        echo $this->numeroDeLocacoes . "<BR>";
+    }
+}
+
+/**
+ * A classe FUNCIONARIO extende de PESSOA, e é complementada com a informação
+ * de salário. Não foi criado os métodos set e get para o atributo salário pois
+ * neste exemplo esta informação só é utilizada pelo método interno de exibição
+ * de dados.
+ * */    
+class Funcionario extends Pessoa {
+    private $salario;
+    
+    public function __construct($nome, $telefone, $endereco, $salario) {
+        parent::__construct($nome, $telefone, $endereco);
+        $this->salario = $salario;
+    }
+    
+    public function showInfoPessoa() {
+        echo "Informações de funcionário: ";
+        echo $this->nome . " ";
+        echo $this->telefone . " ";
+        echo $this->endereco . " ";
+        echo $this->salario . "<BR>";
+    }
+}
+
+/**
+ * Como todo produto tem ESTILO e CÓDIGO, foi criado a classe PRODUTO centralizando
+ * estas informações. 
+ * */  
+abstract class Produto {
+
+    // Elementos PROTECTED podem ser utilizados pela classe e suas subclasses 
+    protected $estilo;
+    protected $codigo;
+    
+    public function __construct($estilo, $codigo) {
+        $this->estilo = $estilo;
+        $this->codigo = $codigo;
+    }
+    
+    // Como a informação de código será utilizada mais adiante, foi criado 
+    // o método getCodigo para esta classe
+    public function getCodigo() {
+        return $this->codigo;
+    }
+    
+    // Como cada produto tem suas informações próprias, um método abstrato foi
+    // criado para padronizar a assinatura do método de exibição das informações
+    abstract function showInfoProduto();
+}
+
+/**
+ * Classe CD, extende de PRODUTO, e é complementada pelas informações que só
+ * existem para os CDs. Como a classe PRODUTO possui um método abstrato, é
+ * obrigatório esta classe implementá-lo (método showInfoProduto)
+ * */   
+class CD extends Produto {
+    private $artista;
+    private $album;
+    
+    public function __construct($estilo, $codigo, $artista, $album) {
+       parent::__construct($estilo, $codigo);
+       $this->artista = $artista;
+       $this->album = $album;
+    }
+    
+    public function showInfoProduto() {
+        echo "Informações de CD: ";
+        echo $this->estilo . " ";
+        echo $this->codigo . " ";
+        echo $this->artista . " ";
+        echo $this->album . "<BR>";
+    }
+}
+
+/**
+ * Classe DVD, extende de PRODUTO, e é complementada pelas informações que só
+ * existem para os DVDs. Como a classe PRODUTO possui um método abstrato, é
+ * obrigatório esta classe implementá-lo (método showInfoProduto)
+ * */  
+class DVD extends Produto {
+    private $titulo;
+    
+    public function __construct($estilo, $codigo, $titulo) {
+       parent::__construct($estilo, $codigo);
+       $this->titulo = $titulo;
+    }
+    
+    public function showInfoProduto() {
+        echo "Informações de DVD: ";
+        echo $this->estilo . " ";
+        echo $this->codigo . " ";
+        echo $this->titulo . "<BR>";
+    }
+}
+
+/**
+ * Classe Bluray, extende de PRODUTO, e é complementada pelas informações que só
+ * existem para os Blurays. Como a classe PRODUTO possui um método abstrato, é
+ * obrigatório esta classe implementá-lo (método showInfoProduto)
+ * */ 
+class Bluray extends Produto {
+    private $titulo;
+    private $resolucao;
+    
+    public function __construct($estilo, $codigo, $titulo, $resolucao) {
+       parent::__construct($estilo, $codigo);
+       $this->titulo = $titulo;
+       $this->resolucao = $resolucao;
+    }
+    
+    public function showInfoProduto() {
+        echo "Informações de Bluray: ";
+        echo $this->estilo . " ";
+        echo $this->codigo . " ";
+        echo $this->titulo . " ";
+        echo $this->resolucao . "<BR>";
+    }
+}
+
+/**
+ * A classe LOCACAO representa uma locação realizada na locadora. Ela recebe
+ * como parâmetros de seu método construtor um objeto FUNCIONARIO, um objeto
+ * USUARIO e um objeto PRODUTO, além de atualizar o número de locações realizadas
+ * pelo usuário em questão, por meio dos métodos get e set do atributo de
+ * locações do usuário em questão.  
+ * */   
+class Locacao {
+    private $funcionario;
+    private $usuario;
+    private $produto;
+    
+    public function __construct($funcionario, $usuario, $produto) {
+        $this->funcionario = $funcionario;
+        $this->usuario = $usuario;
+        $this->produto = $produto;
+        
+        $locacoesDoUsuario = $this->usuario->getNumeroDeLocacoes();
+        $this->usuario->setNumeroDeLocacoes($locacoesDoUsuario + 1);
+    }
+    
+    // Este método exibe as informações dos 3 objetos envolvidos na locação
+    public function showInfoLocacao() {
+        echo "LOCAÇÃO realizada por: ";
+        $this->usuario->showInfoPessoa();
+        
+        echo "LOCAÇÃO atendida por: ";
+        $this->funcionario->showInfoPessoa();
+        
+        echo "LOCAÇÃO do produto: ";
+        $this->produto->showInfoProduto();
+        
+        echo "<BR>";
+    }
+}
+
+/**
+ * A classe Locadora possui um array de FUNCIONARIOS, um array de USUARIOS, 
+ * um array de PRODUTOS e um array de LOCACOES para organizar todas as informações
+ * da locadora. Para cada um destes arrays foi criado um método de inserção de
+ * dados, e um de listagem de dados.
+ * */    
+class Locadora {
+    private $funcionarios = array();
+    private $usuarios = array();
+    private $produtos = array();
+    private $locacoes = array();
+    
+    /* Métodos de criação de objetos e armazenamento na locadora */
+    
+    public function criarFuncionario($nome, $telefone, $endereco, $salario) {
+       $funcionario = new Funcionario($nome, $telefone, $endereco, $salario);
+       array_push($this->funcionarios, $funcionario);
+    }
+    
+    public function criarUsuario($nome, $telefone, $endereco) {
+       $usuario = new Usuario($nome, $telefone, $endereco);
+       array_push($this->usuarios, $usuario);
+    }
+    
+    public function criarCD($estilo, $codigo, $artista, $album) {
+       $produto = new CD($estilo, $codigo, $artista, $album);
+       array_push($this->produtos, $produto);
+    }
+    
+    public function criarDVD($estilo, $codigo, $titulo) {
+       $produto = new DVD($estilo, $codigo, $titulo);
+       array_push($this->produtos, $produto);
+    }
+    
+    public function criarBluray($estilo, $codigo, $titulo, $resolucao) {
+       $produto = new Bluray($estilo, $codigo, $titulo, $resolucao);
+       array_push($this->produtos, $produto);
+    }
+    
+    public function criarLocacao($funcionario, $usuario, $produto) {
+       $locacao = new Locacao($funcionario, $usuario, $produto);
+       array_push($this->locacoes, $locacao);
+    }
+    
+    /* Métodos de listagem de objetos armazenados na locadora */
+    
+    public function listaUsuarios() {
+       echo "<BR> LISTA DE USUÁRIOS: <BR>";
+       
+       foreach($this->usuarios as $usuario) {
+           $usuario->showInfoPessoa();
+       }
+    }
+    
+    public function listaFuncionarios() {
+       echo "<BR> LISTA DE FUNCIONÁRIOS: <BR>";
+       
+       foreach($this->funcionarios as $funcionario) {
+           $funcionario->showInfoPessoa();
+       }
+    }
+    
+    public function listaProdutos() {
+       echo "<BR> LISTA DE PRODUTOS: <BR>";
+       
+       foreach($this->produtos as $produto) {
+           $produto->showInfoProduto();
+       }
+    }
+    
+    public function listaLocacoes() {
+       echo "<BR> LISTA DE LOCAÇÕES: <BR>";
+       
+       foreach($this->locacoes as $locacao) {
+           $locacao->showInfoLocacao();
+       }
+    }
+    
+    /* Métodos de captura de objetos armazenados na locadora */
+        
+    public function getUsuarioPeloNome($nome) {
+       foreach($this->usuarios as $usuario) {
+           if($usuario->getNome() == $nome)
+               return $usuario;
+       } 
+       
+       return null;
+    }
+    
+    public function getFuncionarioPeloNome($nome) {
+       foreach($this->funcionarios as $funcionario) {
+           if($funcionario->getNome() == $nome)
+               return $funcionario;
+       } 
+       
+       return null;
+    }
+    
+    public function getProdutoPeloCodigo($codigo) {
+       foreach($this->produtos as $produto) {
+           if($produto->getCodigo() == $codigo)
+               return $produto;
+       } 
+       
+       return null;
+    }
+}
+
+// Criando a locadora
+$locadora = new Locadora();
+
+// Inserindo funcionários
+$locadora->criarFuncionario("André", "9999-9999", "Rua da Softblue", 1000);
+$locadora->criarFuncionario("Carlos", "9999-9998", "Rua do Software", 1000);
+
+// Listando funcionários
+$locadora->listaFuncionarios();
+
+// Inserindo usuários
+$locadora->criarUsuario("Fernando", "9999-9997", "Rua Brasil");
+$locadora->criarUsuario("Samuel", "9999-9996", "Rua México");
+
+// Listando usuários
+$locadora->listaUsuarios();
+
+// Inserindo produtos
+$locadora->criarCD("Rock", 1, "U2", "Zooropa");
+$locadora->criarDVD("Suspense", 2, "A Noite Chuvosa");
+$locadora->criarBluray("Ação", 3, "O Tesouro", "FullHD");
+
+// Listando produtos
+$locadora->listaProdutos();
+
+// Criando locações: observe que é necessário capturar os objetos pelos seus
+// nomes ou códigos, neste exemplo, para utilizá-los na criação da locação
+$funcionario = $locadora->getFuncionarioPeloNome("André");
+$usuario = $locadora->getUsuarioPeloNome("Samuel");
+$produto = $locadora->getProdutoPeloCodigo(1);
+$locadora->criarLocacao($funcionario, $usuario, $produto);
+
+$funcionario = $locadora->getFuncionarioPeloNome("Carlos");
+$usuario = $locadora->getUsuarioPeloNome("Fernando");
+$produto = $locadora->getProdutoPeloCodigo(2);
+$locadora->criarLocacao($funcionario, $usuario, $produto);
+
+$funcionario = $locadora->getFuncionarioPeloNome("André");
+$usuario = $locadora->getUsuarioPeloNome("Samuel");
+$produto = $locadora->getProdutoPeloCodigo(3);
+$locadora->criarLocacao($funcionario, $usuario, $produto);
+
+// Listando locações
+$locadora->listaLocacoes();
+
+?>
